@@ -167,6 +167,28 @@ img {
 .modal-title{
     text-align: center;
 }
+        .carousel-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.carousel-overlay-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-overlay-subtitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
 
 
 
@@ -187,61 +209,66 @@ img {
         </div>
     </nav>
     <section id="home">
-        <div class="carousel-container">
-            <div id="heroCarousel" class="carousel slide" data-ride="carousel">
-               
-                <ol class="carousel-indicators">
-                    <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#heroCarousel" data-slide-to="1"></li>
-                    <li data-target="#heroCarousel" data-slide-to="2"></li>
-                </ol>
-    
-               
-                <div class="carousel-inner">
-                    
-                    <div class="item active">
-                        <div class="carousel-image" style="background-image: url('1.jpg'); height: 500px; background-size: cover;">
-                            <div class="carousel-caption">
-                                <h1>Welcome to the Legend</h1>
-                                <p>Experience the legacy of Stephen Curry</p>
-                                <a href="#about"><button class="btn btn-primary">Read More</button></a>
-                            </div>
-                        </div>
-                    </div>
-    
-                   
-                    <div class="item">
-                        <div class="carousel-image" style="background-image: url('5.jpg'); height: 500px; background-size: cover;">
-                            <div class="carousel-caption">
-                                <h1>Changing the Game</h1>
-                                <p>The impact of the three-point shot revolution</p>
-                                <a href="#about"><button class="btn btn-primary">Learn More</button></a>
-                            </div>
-                        </div>
-                    </div>
-    
-                  
-                    <div class="item">
-                        <div class="carousel-image" style="background-image: url('3.jpg'); height: 500px; background-size: cover;">
-                            <div class="carousel-caption">
-                                <h1>More Than an Athlete</h1>
-                                <p>Stephen Curry's influence off the court</p>
-                                <a href="#blog"><button class="btn btn-primary">Discover More</button></a>
-                            </div>
+    <div class="carousel-container">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+
+            <!-- Carousel Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="1"></li>
+                <li data-target="#heroCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel Content -->
+            <div class="carousel-inner">
+
+                <div class="carousel-overlay">
+                    <h1 class="carousel-overlay-title">Greatest Of All Time</h1>
+                    <p class="carousel-overlay-subtitle">Stephen Curry</p>
+                </div>
+
+                <div class="item active">
+                    <div class="carousel-image" style="background-image: url('1.jpg'); height: 500px; background-size: cover;">
+                        <div class="carousel-caption">
+                            <h1>Welcome to the Legend</h1>
+                            <p>Experience the legacy of Stephen Curry</p>
+                            <a href="#about"><button class="btn btn-primary">Read More</button></a>
                         </div>
                     </div>
                 </div>
-    
-                
-                <a class="left carousel-control" href="#heroCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#heroCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+
+                <div class="item">
+                    <div class="carousel-image" style="background-image: url('5.jpg'); height: 500px; background-size: cover;">
+                        <div class="carousel-caption">
+                            <h1>Changing the Game</h1>
+                            <p>The impact of the three-point shot revolution</p>
+                            <a href="#about"><button class="btn btn-primary">Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="carousel-image" style="background-image: url('3.jpg'); height: 500px; background-size: cover;">
+                        <div class="carousel-caption">
+                            <h1>More Than an Athlete</h1>
+                            <p>Stephen Curry's influence off the court</p>
+                            <a href="#blog"><button class="btn btn-primary">Discover More</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Carousel Controls -->
+            <a class="left carousel-control" href="#heroCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#heroCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
-    </section>
+    </div>
+</section>
+
     
 
     
